@@ -1,0 +1,67 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        background-image: url(back.jpg);
+    }
+    
+    .button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin: 1px;
+        cursor: pointer;
+        border: 3px rgb(190, 207, 214) solid;
+        border-radius: 20px;
+        outline: none;
+        font-family: sans-serif;
+    }
+    
+    .textview {
+        width: 220px;
+        margin: 5;
+        font-size: 25px;
+        padding: 5;
+        height: 40px;
+        border: 3px rgb(230, 225, 225) solid;
+        outline: none;
+        border-radius: 20px;
+        font-family: sans-serif;
+        font-size: 30px;
+    }
+    
+    .main {
+        position: absolute;
+        top: 30%;
+        margin-left: 40%;
+        border: rgb(228, 228, 40) 2px solid;
+        padding: 20px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+    }
+    
+    .textview {
+        background-color: rgb(255, 255, 255);
+        outline-color: none;
+        margin-top: 10px;
+    }
+    
+    .button {
+        background-color: rgb(233, 233, 233);
+        color: rgb(0, 0, 0);
+        margin-top: 10px;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .main {
+            position: absolute;
+            top: 20%;
+            margin-left: 15%;
+            border: rgb(228, 228, 40) 2px solid;
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+        }
+    }

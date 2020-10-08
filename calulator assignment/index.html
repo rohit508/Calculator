@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+
+<body>
+    <div class="main">
+        <form name="form">
+            <input class="textview" name="textview" placeholder=" 0">
+        </form>
+        <table>
+            <tr>
+                <td><input type="button" class="button" value="C" onclick="clean()"></td>
+                <td><input type="button" class="button" value="<" onclick="back()"></td>
+                <td><input type="button" class="button" value="/" onclick="inset('/')"></td>
+                <td><input type="button" class="button" value="*" onclick="inset('*')"></td>
+
+
+            </tr>
+            <tr>
+                <td><input type="button" class="button" value="7" onclick="inset(7)"></td>
+                <td><input type="button" class="button" value="8" onclick="inset(8)"></td>
+                <td><input type="button" class="button" value="9" onclick="inset(9)"></td>
+                <td><input type="button" class="button" value="-" onclick="inset('-')"></td>
+
+
+            </tr>
+            <tr>
+                <td><input type="button" class="button" value="4" onclick="inset(4)"></td>
+                <td><input type="button" class="button" value="5" onclick="inset(5)"></td>
+                <td><input type="button" class="button" value="6" onclick="inset(6)"></td>
+                <td><input type="button" class="button" value="+" onclick="inset('+')"></td>
+
+
+            </tr>
+            <tr>
+                <td><input type="button" class="button" value="1" onclick="inset(1)"></td>
+                <td><input type="button" class="button" value="2" onclick="inset(2)"></td>
+                <td><input type="button" class="button" value="3" onclick="inset(3)"></td>
+                <td rowspan="2"><input type="button" style="height: 100px;" class="button" value="=" onclick="equal()"></td>
+
+
+            </tr>
+
+            <tr>
+                <td colspan="2"><input type="button" style="width: 110px;" class="button" value="0" onclick="inset(0)"></td>
+                <td><input type="button" class="button" value="." onclick="inset('.')"></td>
+
+
+
+
+
+
+            </tr>
+
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
